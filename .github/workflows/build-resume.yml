@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build-resume:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - name: docker-resume-builder
+      run: docker run --rm -v $PWD:/data szyko7/xelatex:latest xelatex resume.tex
+    - uses: 'marvinpinto/action-automatic-releases@latest'
+      with:
+        repo_token: '${{ secrets.GITHUB_TOKEN }}'
+        prerelease: false
+        automatic_release_tag: latest
+        files: |
+          resume.pdf
