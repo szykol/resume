@@ -1,0 +1,167 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Szymon} \headerlastnamestyle{Kołton} \\
+	\vspace{2mm}
+	{\faEnvelope\ szymonkolton@gmail.com} | {\faMobile\ +48*********} | {\faMapMarker\ Kraków} | {September 1998}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work Experience}
+\begin{cventries}
+
+	\cventry
+	{Software Developer - Go \& Python}
+	{Falcon V Systems | \descriptionstyle{Telco}}
+	{Gdynia - Remote}
+	{Oct 2022 – Present}
+	{\begin{cvitems}
+		\item {Working on solutions based on Distributed Access Architecture}
+		\item {Developing software that operates with Remote PHY devices}
+		\item {Developing software based on Flexible Mac Architecture (FMA)}
+		\item {Developing microservices based on Hexagonal Architecture}
+		\item {Deploying products on Kubernetes clusters using Helm charts}
+		\end{cvitems}}
+	\cventry
+	{Software Engineer - Python}
+	{Alvaria (formerly Noble Systems Corporation) | \descriptionstyle{Contact Center Solutions}}
+	{Kraków}
+	{Nov 2021 – Oct 2022}
+	{\begin{cvitems}
+		\item {Maintaining Speech Analytics products for on-premise clients}
+		\item {Porting on-premise products to cloud}
+		\item {Porting single binary apps to microservice architecture based on kubernetes}
+		\end{cvitems}}
+	\cventry
+	{Junior Software Developer - Python}
+	{Noble Systems Corporation | \descriptionstyle{Contact Center Solutions}}
+	{Kraków}
+	{Aug 2019 – Nov 2021}
+	{\begin{cvitems}
+		\item {Developing \& Maintaining products that use third-party speech recognition engine to provide automated ways of analyzing real-time calls and post-call recordings}
+		\item {Shipping products for CentOS systems by providing rpm packages}
+		\item {Porting legacy products written in Python2 and twisted to Python3 and asyncio}
+		\end{cvitems}}
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BSc in Computer Science}
+	{Pedagogical University of Kraków}
+	{Kraków}
+	{Aug 2017 – Mar 2021}
+	{}
+\end{cventries}
+
+\vspace{-2mm}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Go: & {\skill{gomock, zap }} \\
+		Python:  & {\skill{ asyncio, fastapi, psycopg, asyncpg, aiohttp, flask, twisted, pytest }} \\
+		Persistence:  & {\skill{ postgresql, redis, mongodb }} \\
+		VCS: & {\skill { git, github, gitlab, bitbucket, tfs }} \\
+		Containerization \& Orchestration: & {\skill {kubernetes, helm, docker, docker-compose, k3s, harbor, k9s}} \\
+		CI/CD: & {\skill {gitlab CI/CD, github actions, Jenkins}} \\
+		Other: & {\skill {azure, jira, scrum, hexagonal architecture, swagger, driver license}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+
+\cvsection{Languages}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.25}{\begin{tabular}{ l l }
+		English:  & {\skill{ B2}} \\
+		Polish:  & {\skill{ Native}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-7mm}
+
+\cvsection{Links}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.25}{\begin{tabular}{ l l }
+		\href{https://www.github.com/szykol}{\faGithubSquare\ \@www.github.com/szykol} \\
+		\href{https://www.linkedin.com/in/szymon-kolton}{\faLinkedinSquare\ \@www.linkedin.com/in/szymon-kolton} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+
+
+\vspace{-5mm}
+\emptycvsection{nullop}
+\begin{cventries}
+	\cventry
+	{}
+	{}
+	{}
+	{}
+	{I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC
+	(General Data Protection Regulation).}
+\end{cventries}
+\end{document}
